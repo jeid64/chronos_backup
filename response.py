@@ -34,7 +34,7 @@ def restore(url, log_file_location):
 
 def main():
     parser = argparse.ArgumentParser(description='Backups and restores Chronos jobs. By default, assumes you want to backup your jobs to chronosbackups/')
-    parser.add_argument('-b', '--backup', help='Specifies whether to backup the Chronos jobs and where in the format chronosbackus/ and the folder must already exist.')
+    parser.add_argument('-b', '--backup', help='Specifies whether to backup the Chronos jobs and where in the format chronosbackups/ and the folder must already exist.')
     parser.add_argument('-r', '--restore', help='Specifies whether to restore from a json file to the Chronos server.')
     parser.add_argument('-u', '--url', help='Specify URL for Chronos in the format http://chronos:4400', required=True)
     args = parser.parse_args()
