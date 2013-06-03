@@ -19,6 +19,7 @@ def restore(url, log_file_location):
         io = StringIO(line)
         jsondecode = json.load(io)
         for item in jsondecode:
+            # check if the job is a dependency
             if 'parents' in item:
                 payload = json.dumps(item)
                 urltosend = url + '/scheduler/dependency'
