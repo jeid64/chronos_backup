@@ -7,7 +7,7 @@ Requires:
 ---------
   requests
 
-  python >2.7
+  python >=2.7
   
 Examples:
 ---------
